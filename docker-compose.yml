@@ -1,0 +1,18 @@
+version: "3"
+services:
+    frontend:
+        container_name: react_frontend
+        build:
+            context: ./frontend
+            dockerfile: Dockerfile
+        image: btomar/react_frontend
+        ports:
+            - "3000:3000"
+    backend:
+        container_name: node_server
+        build:
+            context: ./backend
+            dockerfile: Dockerfile
+        image: btomar/node_server
+        ports:
+            - "3001:3001"

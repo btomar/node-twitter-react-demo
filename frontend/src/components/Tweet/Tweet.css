@@ -1,0 +1,11 @@
+.item-container {
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.item-image {
+  float: left;
+  margin: 15px 10px;
+}
